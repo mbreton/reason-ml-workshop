@@ -204,7 +204,7 @@ Spock nous transmet un guide sur le `pattern matching`. Selon lui, le pattern ma
 > Une fois le cas `Some` traité, on nous conseille d'utiliser la fonction `draw` dans le fichier `Image.re` à la [ligne 20](./src/Image.re#L20). Cette fonction a la particularité d'utiliser les `labeled arguments` ou arguments nommés. Un argument nommé est un argument dont on précise le nom lors de l'appel de la fonction où il est déclaré. Cela permet, en autre, d'améliorer la clarté des paramètres donnés. Pour en savoir plus :(<https://reasonml.github.io/docs/en/function.html#labeled-arguments>).
 
 <details>
-<summary><i>Découvrer la solution ici</i></summary>
+<summary><i>Découvrire la solution ici</i></summary>
 <p>
 <pre>
 let render = (canvasContext: Types.canvasContext, state: Types.shipState) =>
@@ -242,7 +242,7 @@ let onKeyDown = (keyCode: string) : unit =>
 Prêter bien attention aux résultats de la partie `Ship.re` des tests unitaires visibles dans la console. Ils vous indique le comportement attendu de `onKeyDown` de façon détaillé.
 
 <details>
-<summary><i>Découvrer la solution ici</i></summary>
+<summary><i>Découvrir la solution ici</i></summary>
 <p>
 <pre>
 let onKeyDown = (keyCode: string) : unit =>
@@ -287,7 +287,7 @@ v
 Prêter bien attention aux résultats des tests unitaires visibles dans la console. Ils vous indique le comportement attendu de `reducer` de façon détaillé.
 
 <details>
-<summary><i>Découvrer la solution ici</i></summary>
+<summary><i>Découvrire la solution ici</i></summary>
 <p>
 <pre>
 let shipSpeed = 0.7;
@@ -372,7 +372,7 @@ Pour implémenter `moveAliens` vous utiliserez un très belle syntaxe baptisée 
 <http://2ality.com/2017/12/functions-reasonml.html#the-reverse-application-operator>
 
 <details>
-<summary><i>Découvrer la solution ici</i></summary>
+<summary><i>Découvrire la solution ici</i></summary>
 <p>
 <pre>
 let alienSpeed = 0.3;
@@ -437,7 +437,7 @@ L'entreprise est presque prêt ! Seul le système de detection des colisions res
 Regarder le fichier `Colision.re`, il contient la fonction `findNotCollided` responsable de prendre les aliens et les projectiles et de ne resortir que ceux qui n'ont pas eu de colision entre-eux. Comme pour les derniers chapitres, vous pourez compter sur les tests unitaires pour vous guider. Pour cette fonction nous devrons utiliser la fonction `fold_left` du module `List`, et de la concaténation de `list` grâce à l'operateur `@`.
 
 <details>
-<summary><i>Découvrer la solution ici</i></summary>
+<summary><i>Découvrire la solution ici</i></summary>
 <p>
 <pre>
 let removeKilledBy = (shot: Types.shot, aliens: list(Types.alien)) : list(Types.alien) =>
